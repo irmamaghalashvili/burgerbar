@@ -1,17 +1,52 @@
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: aqua;
-    height: 50px;
+    justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 .navigations {
     display: flex;
-    justify-content: ;
+    justify-content: center;
 }
 .navigations ul {
     display: flex;
 }
 .nav-a {
     padding-left: 20px;
+}
+#input-box {
+    margin: 50px;
+}
+button {
+    margin: 0 10px;
+}
+.burger-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: blue;
+    font-size: 30px;
+    display: none;
+}
+@media (max-width: 768px) {
+    .burger-bar {
+        display: block;
+    }
+    .navigations {
+        display: none;
+    }
+    .header {
+        flex-direction: column;
+    }
+    ul {
+        flex-direction: column;   
+    }
+    li {
+        margin-top: 15px;
+    }
+    .navigations.activeNav {
+        display: block;
+    }
 }

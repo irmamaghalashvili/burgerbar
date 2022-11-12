@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>javascript</title>
 </head>
 <body>
     <header>
         <div class="header">
             <a href="#">Logo</a>
-            <nav class="navigations">
+            <nav class="navigations" id="nav-bar">
                 <ul>
                     <li>
                         <a class="nav-a" href="#">Home</a>
@@ -28,8 +29,19 @@
                     </li>
                 </ul>
             </nav>
+            <div class="burger-bar" id="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
+    <div id="input-box">
+        <form action="" id="form-box">
+            <input type="text" id="input">
+            <button id="btn">Add</button>
+            <i class="fa-solid fa-xmark clear"></i>
+        </form>
+        <ul id="ul-list"></ul>
+    </div>
     <script src="javascript.js"></script>
 </body>
 </html>
