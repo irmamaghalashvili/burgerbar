@@ -23,7 +23,7 @@ i {
 }
 .burger-bar {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
     color: blue;
     font-size: 30px;
