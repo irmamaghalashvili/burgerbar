@@ -35,4 +35,5 @@ let burgerbar = document.getElementById('burger');
 
 burgerbar.addEventListener('click', function() {
     navigations.classList.toggle('activeNav')
+    burgerbar.classList.toggle('activebar')
 });
